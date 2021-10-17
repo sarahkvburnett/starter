@@ -1,0 +1,94 @@
+//Colors
+$white: #fff;
+$black: #000;
+$grey: #ccc;
+
+$primary: $black;
+$secondary: $grey;
+
+$colors-list: (
+    "white": $white,
+    "black": $black,
+    "grey": $grey
+);
+
+//Breakpoints
+$mobile: 540px;
+$tablet: 769px;
+$desktop: 1366px;
+
+//Bootstrap Overrides
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: $tablet, //768px
+        lg: 992px, //992px
+        xl: $desktop, //1200px
+        xxl: 1900px
+);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1610px
+);
+
+//Header & menu variables
+$header-color:  $white;
+$header-bg: $secondary;
+$header-padding: .5rem;
+$header-width: 100%;
+$header-height: 6rem;
+
+$menu-bg: $white;
+$menu-header-color: $secondary;
+$menu-link-color: $grey;
+$menu-link-hover-color: $secondary;
+$menu-padding: 2rem;
+
+//Hero variables
+$hero-height: 100vh;
+$hero-min-height: 800px;
+
+//Button variables
+$btn-font: 'Roboto', sans-serif;
+$btn-border-radius: 40px;
+$btn-padding: .5em 1.5em;
+$btn-action-padding: .5em 1em .5em 1.5em;
+$btn-action-after-margin: .5em;
+$btn-action-color: $primary;
+$btn-link-color: $white;
+
+//Card variables
+$card-box-shadow: none;
+$card-border: none;
+$card-border-radius: 10px;
+$card-body-padding: 2rem;
+
+//Tabs variables
+$tab-color: $white;
+$tab-hover-color: $primary;
+$tab-hover-border-color: $primary;
+
+//Banner variables
+$banner-color: $white;
+$banner-padding: 15vh 0;
+
+//Footer variables
+$footer-color: $white;
+$footer-link-color: $primary;
+$footer-bg: $secondary;
+$footer-padding: 5vh 0; //.spacing-sm
+$footer-font-size: inherit;
+
+$footer-bar-color: $white;
+$footer-bar-link-color: $primary;
+$footer-bar-bg: $secondary;
+$footer-bar-padding:  2vh 0 4vh;
+$footer-bar-font-size: 1rem;
+
+//Spacing
+$section-padding: 3rem 0;
+$section-title-bottom: 3rem;

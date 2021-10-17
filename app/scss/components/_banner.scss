@@ -1,0 +1,19 @@
+.banner {
+  position: relative;
+  padding: 15vh 0;
+  color: $banner-color;
+  text-align: center;
+
+  img.background {
+    @extend %cover;
+    @extend .darker;
+    z-index: -1;
+  }
+
+  .content {
+    > * {
+      max-width: 600px;
+      margin: 2% auto;
+    }
+  }
+}

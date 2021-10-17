@@ -1,0 +1,18 @@
+Setup New Project:
+Replace logo at /app/logo/logo.svg
+Find/Replace Company Name
+Replace contact info on /includes/footer.php
+Alter menu
+
+Components:
+Hero
+Banner - bg img
+Card / Card-row (text, img) - bootstrap
+Nav Tabs - bootstrap
+Sliders - tiny-slider
+Social Links
+Grid
+
+Utilities:
+Padding - section, main - padding-none, padding-top, padding-bottom
+Container - bootstrap

@@ -1,0 +1,32 @@
+//Sliders
+// using tiny-slider - https://github.com/ganlanyuan/tiny-slider
+
+//Hero slider - see hero
+
+//Main Slider
+.slider {
+  position: relative;
+
+  //Arrows - either side
+  .slider-arrows {
+    position: absolute;
+    color: $white;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    padding: 2rem;
+  }
+}
+
+// Overrides TNS
+.tns-outer {
+  button {
+    display: none;
+  }
+
+}
+

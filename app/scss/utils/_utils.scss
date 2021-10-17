@@ -1,0 +1,49 @@
+//Color
+@each $name, $color in $colors-list {
+  .text#{$name} {
+    color: $color;
+  }
+}
+
+
+//Background color
+@each $name, $color in $colors-list {
+  .#{$name} {
+    background: $color;
+  }
+}
+
+//Font
+.text-small {
+  font-size: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+//Border
+.primary-border-left {
+  border-left: 3px solid $primary;
+}
+
+.primary-border-bottom {
+  border-bottom: 3px solid $primary;
+}
+
+//Separators
+.grey-text-separator {
+  height: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid $grey;
+  width: 15%;
+}
+
+.primary-text-separator {
+  @extend .grey-text-separator;
+  border-bottom: 1px solid $primary;
+}

@@ -1,0 +1,14 @@
+.grid {
+
+  .card {
+    @extend .primary-border-bottom;
+    margin: 1rem;
+  }
+
+  @include media-breakpoint-up(md){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+}

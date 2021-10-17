@@ -1,0 +1,43 @@
+header {
+  color: $header-color;
+  background: $header-bg;
+  background-size: cover;
+  position: relative;
+
+  @extend .d-xl-flex;
+  @extend .flex-column;
+
+  nav.navbar {
+    @extend .d-xl-flex;
+    @extend .justify-content-between;
+    @extend .align-items-center;
+    width: $header-width;
+    margin: auto;
+    padding: $header-padding 2rem;
+    z-index: 3;
+    height: $header-height;
+    border-bottom: 1px solid $white;
+
+    .social-links a {
+      display: inline-block;
+      margin-right: .5rem;
+    }
+
+    .logo {
+      @extend .img-fluid;
+      height: 100%;
+    }
+
+    .navbar-toggler {
+      background: transparent;
+      border: none;
+    }
+    //.menus - see separate file
+  }
+
+  @include media-breakpoint-up(lg){
+    nav.navbar {
+      padding: $header-padding 4rem;
+    }
+  }
+}

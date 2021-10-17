@@ -1,0 +1,72 @@
+.card {
+  position: relative;
+  justify-content: space-between;
+  border: none;
+  border-radius: 0;
+
+  .card-img {
+    border-radius: 0;
+    svg, img {
+      height: 250px;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  .card-img-overlay {
+    @extend .row;
+    @extend .justify-content-center;
+    @extend .align-content-center;
+    @extend .text-center;
+    padding: 10px;
+    > * {
+      margin: .5rem 0;
+    }
+    img, svg {
+      max-height: 50%;
+      width: auto;
+    }
+  }
+}
+
+.card-body {
+  padding: $card-body-padding;
+  > * {
+    margin: 1rem 0;
+  }
+}
+
+.card-row {
+  @extend .d-lg-flex;
+  align-items: center;
+  padding: $section-padding;
+  .card-img {
+    img, svg {
+      width: 100%;
+    }
+  }
+  @include media-breakpoint-up(lg){
+    .card-body, .card-img {
+      width: 50%;
+    }
+  }
+}
+
+// Utilities
+.card-shadow {
+  box-shadow: $card-box-shadow;
+}
+
+.card-rounded {
+  border-radius: $card-border-radius;
+}
+
+.card-bordered {
+  border: $card-border;
+}
+
+
+
+
+
+

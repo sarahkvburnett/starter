@@ -1,0 +1,56 @@
+.btn {
+  font-family: $btn-font;
+  border-radius: $btn-border-radius;
+  padding: $btn-padding;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+//Background, bordered buttons
+.btn-default {
+  @extend .btn;
+  color: $white;
+  &:hover {
+    color: $white;
+  }
+}
+
+@each $name, $color in $colors-list {
+  .btn-#{$name} {
+    @extend .btn;
+    background-color: $color;
+    color: $white;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+//Plain buttons
+.btn-link {
+  color: $btn-link-color;
+  text-decoration: none;
+}
+
+//Button utilities
+.btn-action {
+  padding: $btn-action-padding;
+  &:after {
+    content: ' >';
+    color: $btn-action-color;
+    margin-left: $btn-action-after-margin;
+  }
+}
+
+.btn-underline {
+  text-decoration: underline!important;
+}
+
+//Button container
+.buttons {
+  a, button {
+    margin: .5em;
+    margin-left: 0;
+  }
+}
